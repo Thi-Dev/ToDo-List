@@ -232,17 +232,21 @@ body {
     }
 
     .add-input-container {
-        gap: 10px;
+        flex-direction: column; /* Empile les éléments verticalement */
+        gap: 10px; /* Espacement entre les éléments */
+        align-items: stretch; /* Étire les éléments pour utiliser toute la largeur */
     }
 
     #input-text {
         font-size: 16px;
         height: 40px; /* Ajuste la hauteur */
+        width: 100%; /* Le champ de texte prend toute la largeur */
     }
 
     #add-button {
         font-size: 14px; /* Police plus petite */
-        height: 40px;
+        height: 40px; /* Ajuste la hauteur */
+        width: 100%; /* Le bouton prend toute la largeur */
     }
 
     .todo-item {
