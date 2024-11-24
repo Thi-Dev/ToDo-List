@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Titre principal avec un emoji -->
+        <div class="title-container"> 
+            <h1 id="title"></h1>
+            <p id="emoji">＋</p>
+        </div>
+
+        <!-- Section pour ajouter une nouvelle tâche -->
+        <div class="add-input-container">
+            <input type="text" name="add-todo-text" id="input-text" placeholder="Add New Todo" >          
+            <button id="add-button">Add</button>
+        </div>
+
+        <!-- Section où les tâches sont affichées -->
+        <div class="receiver-container">
+            <ul class="todo-receiver">
+                <!-- Les tâches dynamiques apparaîtront ici en <li> -->
+            </ul>
+        </div>
+        
+    </div>
+    
+    <!-- Lien vers le fichier JS -->
+    <script src="./scrpit.js"></script>
+</body>
+</html>
