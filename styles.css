@@ -98,6 +98,7 @@ body {
 
 /* Chaque tâche */
 .todo-item {
+    margin-right: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -116,7 +117,7 @@ body {
 .task-text {
     flex-grow: 1;
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 17px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     color: #333333;
