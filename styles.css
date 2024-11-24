@@ -264,3 +264,6 @@ body {
     background-color: #0DA801;
 }
 
+.todo-item {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
