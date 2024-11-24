@@ -243,3 +243,24 @@ body {
         margin-left: 5px; /* Ajoute un léger espacement à gauche */
     }
 }
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(2px);
+    }
+    75% {
+        transform: translateX(-2px);
+    }
+}
+
+.delete-task:hover {
+    animation: shake 0.3s ease-in-out;
+    background-color: #0DA801;
+}
+

@@ -104,3 +104,5 @@ emoji.addEventListener("click", function() {
     title.style.color = randomColor;
     emoji.style.color = randomColor;
 });
+
+
