@@ -220,3 +220,25 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .add-input-container {
+        flex-wrap: wrap; /* Autorise le retour à la ligne */
+        flex-direction: row; /* Retour en disposition horizontale */
+        align-items: center;
+        justify-content: flex-start; /* Aligne le bouton à gauche */
+        gap: 10px; /* Espacement réduit */
+    }
+
+    #input-text {
+        flex: 1; /* L'input prend tout l'espace restant */
+        width: auto; /* Ajuste à la largeur du conteneur parent */
+        font-size: 18px; /* Réduit légèrement la taille du texte */
+    }
+
+    #add-button {
+        flex-shrink: 0; /* Empêche le bouton de rétrécir */
+        width: 70px; /* Ajustez pour un look proportionné */
+        height: 50px; /* Conserve une hauteur stable */
+        margin-left: 5px; /* Ajoute un léger espacement à gauche */
+    }
+}
