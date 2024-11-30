@@ -2,10 +2,32 @@
 
 /* Style global */
 body {
-    background: linear-gradient(to right, #7DDCD8, #91C0E0);
+    /* Dégradé initial avec quatre couleurs */
+    background: linear-gradient(to right, #8502fe, #ff2164, #91bfd4,#7DDCD8);
+    background-size: 400% 400%; /* Étendre le dégradé pour l'effet de mouvement */
     font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
+    animation: gradientAnimation 10s ease infinite; /* Animation fluide infinie */
+}
+
+/* Animation du dégradé */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%; /* Début */
+    }
+    25% {
+        background-position: 50% 50%; /* Quart du mouvement */
+    }
+    50% {
+        background-position: 100% 50%; /* Milieu */
+    }
+    75% {
+        background-position: 50% 50%; /* Retour partiel */
+    }
+    100% {
+        background-position: 0% 50%; /* Retour au début */
+    }
 }
 
 /* Conteneur principal */
@@ -126,7 +148,7 @@ body {
 /* Cas où la tâche est marquée terminée */
 .completed .task-text {
     text-decoration: line-through;
-    color: #36BCD4;
+    color: #3e4903;
 }
 
 /* Cases à cocher */
@@ -134,7 +156,7 @@ body {
     width: 35px;
     height: 35px;
     cursor: pointer;
-    accent-color: #3EC7D9; 
+    accent-color: #ddff00; 
 }
 
 /* Bouton supprimer */
@@ -267,3 +289,6 @@ body {
 .todo-item {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
+
+
+
